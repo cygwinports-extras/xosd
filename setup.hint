@@ -1,0 +1,7 @@
+category: X11
+requires: cygwin libxosd2
+sdesc: "X11 on-screen display (utility)"
+ldesc: "XOSD displays text on your screen, sounds simple right? The 
+difference is it is unmanaged and shaped, so it appears transparent. 
+This gives the effect of an On Screen Display, like your TV/VCR etc.. 
+The package also includes xmms and bmp plugins."

@@ -1,0 +1,8 @@
+category: Audio
+requires: cygwin xmms glib gdk-pixbuf gtk+ libxosd2
+external-source: xosd
+sdesc: "XMMS X11 on-screen display plugin"
+ldesc: "XOSD displays text on your screen, sounds simple right? The 
+difference is it is unmanaged and shaped, so it appears transparent. 
+This gives the effect of an On Screen Display, like your TV/VCR etc.. 
+The package also includes xmms and bmp plugins."

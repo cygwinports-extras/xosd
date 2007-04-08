@@ -1,0 +1,127 @@
+xosd
+------------------------------------------
+XOSD displays text on your screen, sounds simple right? The difference 
+is it is unmanaged and shaped, so it appears transparent. This gives the 
+effect of an On Screen Display, like your TV/VCR etc.. The package also 
+includes xmms and bmp plugins.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libX11_6-1.1.1-1
+  libXext6-1.0.2-1
+(bmp-xosd)
+  bmp-0.9.7.1-1
+  gdk-pixbuf2-2.10.9-1
+  glib2-2.12.9-1
+  gtk2-x11-2.10.9-1
+(xmms-xosd)
+  gdk-pixbuf-0.22.0-4
+  glib-1.2.10-3
+  gtk+-1.2.10-2
+  xmms-1.2.10-4
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.ignavus.net/software.html
+
+Canonical download:
+  http://downloads.sourceforge.net/libxosd/
+
+-------------------------------------------
+
+Build instructions:
+  unpack xosd-2.2.14-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./xosd-2.2.14-X.cygport all
+
+This will create:
+  /usr/src/xosd-2.2.14-X-src.tar.bz2
+
+  /usr/src/bmp-xosd-2.2.14-X.tar.bz2
+  /usr/src/libxosd-devel-2.2.14-X.tar.bz2
+  /usr/src/libxosd2-2.2.14-X.tar.bz2
+  /usr/src/xmms-xosd-2.2.14-X.tar.bz2
+  /usr/src/xosd-2.2.14-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(xosd)
+  /usr/bin/osd_cat.exe
+  /usr/share/doc/Cygwin/xosd-2.2.14.README
+  /usr/share/doc/xosd-2.2.14/AUTHORS
+  /usr/share/doc/xosd-2.2.14/COPYING
+  /usr/share/doc/xosd-2.2.14/ChangeLog
+  /usr/share/doc/xosd-2.2.14/INSTALL
+  /usr/share/doc/xosd-2.2.14/README
+  /usr/share/doc/xosd-2.2.14/TODO
+  /usr/share/man/man1/osd_cat.1.gz
+  /usr/share/xosd/bottom-left.png
+  /usr/share/xosd/bottom-right.png
+  /usr/share/xosd/bottom.png
+  /usr/share/xosd/centre.png
+  /usr/share/xosd/left.png
+  /usr/share/xosd/right.png
+  /usr/share/xosd/top-left.png
+  /usr/share/xosd/top-right.png
+  /usr/share/xosd/top.png
+
+(libxosd2)
+  /usr/bin/cygxosd-2.dll
+
+(libxosd-devel)
+  /usr/bin/xosd-config
+  /usr/include/xosd.h
+  /usr/lib/libxosd.dll.a
+  /usr/lib/libxosd.la
+  /usr/share/aclocal/libxosd.m4
+  /usr/share/man/man1/xosd-config.1.gz
+  /usr/share/man/man3/xosd.3.gz
+  /usr/share/man/man3/xosd_create.3.gz
+  /usr/share/man/man3/xosd_destroy.3.gz
+  /usr/share/man/man3/xosd_display.3.gz
+  /usr/share/man/man3/xosd_get_number_lines.3.gz
+  /usr/share/man/man3/xosd_hide.3.gz
+  /usr/share/man/man3/xosd_is_onscreen.3.gz
+  /usr/share/man/man3/xosd_set_align.3.gz
+  /usr/share/man/man3/xosd_set_bar_length.3.gz
+  /usr/share/man/man3/xosd_set_horizontal_offset.3.gz
+  /usr/share/man/man3/xosd_set_pos.3.gz
+  /usr/share/man/man3/xosd_set_shadow_offset.3.gz
+  /usr/share/man/man3/xosd_set_vertical_offset.3.gz
+  /usr/share/man/man3/xosd_show.3.gz
+  /usr/share/man/man3/xosd_uninit.3.gz
+
+(bmp-xosd)
+  /usr/lib/bmp/General/cygbmp_osd.dll
+  /usr/lib/bmp/General/libbmp_osd.la
+
+(xmms-xosd)
+  /usr/lib/xmms/General/cygxmms_osd.dll
+  /usr/lib/xmms/General/libxmms_osd.la
+
+------------------
+
+Port Notes:
+
+----- version 2.2.14-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
