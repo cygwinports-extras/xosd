@@ -1,0 +1,19 @@
+DESCRIPTION="X11 on-screen display library"
+HOMEPAGE="http://www.ignavus.net/software.html"
+SRC_URI="mirror://sourceforge/libxosd/${P}.tar.gz"
+
+PKG_NAMES="${PN} lib${PN}2 lib${PN}-devel xmms-${PN}"
+PKG_HINTS="setup lib devel xmms"
+PKG_CONTENTS[0]='usr/bin/*.exe usr/share/doc/ usr/share/man/man1/osd_cat.* usr/share/xosd/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]="usr/bin/*-config usr/include/ usr/lib/lib* usr/share/aclocal/ 
+                 usr/share/man/man1/*-config.* usr/share/man/man3/"
+PKG_CONTENTS[3]='usr/lib/xmms/'
+
+DIFF_EXCLUDES="xosd.spec"
+
+CYGCONF_ARGS="
+	--disable-beep_media_player_plugin
+	--disable-static
+	--disable-xinerama
+"
