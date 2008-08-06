@@ -1,4 +1,3 @@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x xosd.spec origsrc/xosd-2.2.14/libxosd.m4 src/xosd-2.2.14/libxosd.m4
 --- origsrc/xosd-2.2.14/libxosd.m4	2004-08-19 17:39:40.000000000 -0500
 +++ src/xosd-2.2.14/libxosd.m4	2007-04-08 10:22:47.640625000 -0500
 @@ -6,7 +6,7 @@
@@ -10,7 +9,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  [dnl
  dnl Get the cflags and libraries from the xosd-config script
  dnl
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x xosd.spec origsrc/xosd-2.2.14/src/bmp_plugin/Makefile.am src/xosd-2.2.14/src/bmp_plugin/Makefile.am
 --- origsrc/xosd-2.2.14/src/bmp_plugin/Makefile.am	2004-11-08 14:34:39.000000000 -0600
 +++ src/xosd-2.2.14/src/bmp_plugin/Makefile.am	2007-04-08 02:14:57.578125000 -0500
 @@ -19,8 +19,8 @@
@@ -24,7 +22,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  
  libbmp_osd_old_la_SOURCES = bmp_osd.c dlg_config_old.c dlg_font.c dlg_colour.c bmp_osd.h
  libbmp_osd_old_la_LIBADD  = $(top_builddir)/src/libxosd/libxosd.la
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x xosd.spec origsrc/xosd-2.2.14/src/libxosd/Makefile.am src/xosd-2.2.14/src/libxosd/Makefile.am
 --- origsrc/xosd-2.2.14/src/libxosd/Makefile.am	2004-08-19 17:39:33.000000000 -0500
 +++ src/xosd-2.2.14/src/libxosd/Makefile.am	2007-04-08 02:10:44.343750000 -0500
 @@ -3,6 +3,6 @@
@@ -35,7 +32,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +libxosd_la_LDFLAGS = -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE) -no-undefined
  
   
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x xosd.spec origsrc/xosd-2.2.14/src/xmms_plugin/Makefile.am src/xosd-2.2.14/src/xmms_plugin/Makefile.am
 --- origsrc/xosd-2.2.14/src/xmms_plugin/Makefile.am	2004-08-19 17:39:31.000000000 -0500
 +++ src/xosd-2.2.14/src/xmms_plugin/Makefile.am	2007-04-08 02:23:28.812500000 -0500
 @@ -17,8 +17,8 @@
