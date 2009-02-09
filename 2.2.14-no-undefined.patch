@@ -1,14 +1,3 @@
---- origsrc/xosd-2.2.14/libxosd.m4	2004-08-19 17:39:40.000000000 -0500
-+++ src/xosd-2.2.14/libxosd.m4	2007-04-08 10:22:47.640625000 -0500
-@@ -6,7 +6,7 @@
- dnl AM_PATH_LIBXOSD([ACTION-IF-FOUND [, ACTION-IF-NOT-FOUND]])
- dnl Test to see if libxosd is installed, and define LIBXOSD_CFLAGS, LIBXOSDLIBS
- dnl
--AC_DEFUN(AM_PATH_LIBXOSD,
-+AC_DEFUN([AM_PATH_LIBXOSD],
- [dnl
- dnl Get the cflags and libraries from the xosd-config script
- dnl
 --- origsrc/xosd-2.2.14/src/bmp_plugin/Makefile.am	2004-11-08 14:34:39.000000000 -0600
 +++ src/xosd-2.2.14/src/bmp_plugin/Makefile.am	2007-04-08 02:14:57.578125000 -0500
 @@ -19,8 +19,8 @@
