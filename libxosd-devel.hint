@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libxosd2 libX11-devel libXext-devel libXinerama-devel
+requires: libxosd2 libX11-devel libXext-devel libXinerama-devel
 external-source: xosd
 sdesc: "X11 on-screen display (development)"
 ldesc: "XOSD displays text on your screen, sounds simple right? The 
