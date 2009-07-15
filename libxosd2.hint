@@ -1,5 +1,5 @@
 category: X11
-requires: libX11_6 libXext6 libXinerama1
+requires: libgcc1 libX11_6 libXext6 libXinerama1
 external-source: xosd
 sdesc: "X11 on-screen display (runtime)"
 ldesc: "XOSD displays text on your screen, sounds simple right? The 

@@ -1,6 +1,7 @@
 DESCRIPTION="X11 on-screen display library"
 HOMEPAGE="http://www.ignavus.net/software.html"
-SRC_URI="mirror://sourceforge/libxosd/${P}.tar.gz"
+SRC_URI="mirror://sourceforge/libxosd/${P}.tar.gz
+         http://digilander.libero.it/dgp85/gentoo/${PN}-gentoo-m4-1.tar.bz2"
 PATCH_URI="mirror://portage/x11-libs/${PN}/files/${P}-m4.patch
            2.2.14-no-undefined.patch"
 
@@ -14,4 +15,5 @@ PKG_IGNORE="usr/share/xosd/"
 
 DIFF_EXCLUDES="xosd.spec"
 
+ACLOCAL_FLAGS="-I ../m4"
 CYGCONF_ARGS="--disable-beep_media_player_plugin --disable-new-plugin"
