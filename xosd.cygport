@@ -1,0 +1,30 @@
+NAME="xosd"
+VERSION=2.2.14
+RELEASE=10
+CATEGORY="X11"
+SUMMARY="X11 on-screen display"
+DESCRIPTION="XOSD displays text on your screen, sounds simple right? The
+difference is it is unmanaged and shaped, so it appears transparent. This
+gives the effect of an On Screen Display, like your TV/VCR etc.."
+HOMEPAGE="http://sourceforge.net/projects/libxosd/"
+SRC_URI="mirror://sourceforge/libxosd/xosd-${VERSION}.tar.gz
+         http://digilander.libero.it/dgp85/gentoo/xosd-gentoo-m4-1.tar.bz2"
+PATCH_URI="mirror://portage/x11-libs/xosd/files/xosd-2.2.14-m4.patch
+           mirror://portage/x11-libs/xosd/files/xosd-2.2.14-makefile.patch?revision=1.1
+           mirror://portage/x11-libs/xosd/files/xosd-config-incorrect-dup-filter-fix.patch
+           2.2.14-no-undefined.patch"
+
+PKG_NAMES="xosd libxosd2 libxosd-devel"
+xosd_CONTENTS='usr/bin/*.exe usr/share/doc/ usr/share/man/man1/osd_cat.*'
+libxosd2_CATEGORY="Libs"
+libxosd2_CONTENTS='usr/bin/*-2.dll'
+libxosd_devel_CATEGORY="Libs"
+libxosd_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/lib* usr/share/aclocal/
+                 usr/share/man/man1/*-config.* usr/share/man/man3/"
+# used by XMMS & BMP plugins
+PKG_IGNORE="usr/share/xosd/"
+
+DIFF_EXCLUDES="xosd.spec"
+
+ACLOCAL_FLAGS="-I ../m4"
+CYGCONF_ARGS="--disable-beep_media_player_plugin --disable-new-plugin"

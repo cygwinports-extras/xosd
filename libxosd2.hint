@@ -1,8 +1,0 @@
-category: X11
-requires: libgcc1 libX11_6 libXext6 libXinerama1
-external-source: xosd
-sdesc: "X11 on-screen display (runtime)"
-ldesc: "XOSD displays text on your screen, sounds simple right? The 
-difference is it is unmanaged and shaped, so it appears transparent. 
-This gives the effect of an On Screen Display, like your TV/VCR etc.. 
-The package also includes xmms and bmp plugins."
